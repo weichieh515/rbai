@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="semantic/dist/semantic.min.js"></script>
+  <style>
+    .main.container {
+      margin-top: 2em;
+    }
+
+    .main.menu {
+      margin-top: 4em;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      transition: box-shadow 0.5s ease, padding 0.5s ease;
+    }
+
+    .main.menu .item img.logo {
+      margin-right: 1.5em;
+    }
+    .main.menu.fixed {
+      background-color: #FFFFFF;
+      border: 1px solid #DDD;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="ui borderless main menu">
+    <div class="ui container" style="margin:auto;">
+      <div href="#" class="header item">
+        <img class="logo" src="img/LOGO.png"> 國立中正大學資訊管理學系
+      </div>
+      <div class="right menu">
+        <a href="#" class="ui dropdown item">
+          系所介紹 <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">系所簡介</div>
+            <div class="item">研究中心</div>
+            <div class="item">系所位置</div>
+          </div>
+        </a>
+        <a href="#" class="ui dropdown item">
+          系所成員 <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">專任師資</div>
+            <div class="item">兼任教授</div>
+            <div class="item">客座教授</div>
+            <div class="item">行政人員</div>
+          </div>
+        </a>
+        <a href="#" class="ui dropdown item">
+          修業規定 <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">大學部</div>
+            <div class="item">碩士班</div>
+            <div class="item">碩專班</div>
+            <div class="item">博士班</div>
+          </div>
+        </a>
+        <a href="#" class="ui dropdown item">
+          招生資訊 <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">大學部</div>
+            <div class="item">碩士班</div>
+            <div class="item">碩專班</div>
+            <div class="item">博士班</div>
+            <div class="item">學分班</div>
+          </div>
+        </a>
+        <a href="#" class="ui dropdown item">
+          文件下載 <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">大學部</div>
+            <div class="item">碩士班</div>
+            <div class="item">博士班</div>
+          </div>
+        </a>
+        <a href="#" class="item">博士班資格審查系統</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

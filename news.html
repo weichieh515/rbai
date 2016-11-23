@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>news</title>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script>
+    //TAB TEST
+    function openTab(evt, tabName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="ui aligned container segment" style="width:370px;">
+    <div class="ui small secondary pointing menu" style="font-family:Microsoft JhengHei;">
+      <a class="item tablinks active " onmouseover="openTab(event, 'tab1')">
+        所有公告
+      </a>
+      <a class="item tablinks" onmouseover="openTab(event, 'tab2')">
+        行政公告
+      </a>
+      <a class="item tablinks" onmouseover="openTab(event, 'tab3')">
+        學術公告
+      </a>
+      <a class="item tablinks" onmouseover="openTab(event, 'tab4')">
+        其他類別
+    </a>
+  </div>
+
+
+
+    <div id="tab1" class="ui aligned container tabcontent">
+      <!--<iframe id="iframe1" src="news-1.html" frameborder="0" framepadding="10px" scrolling="no"></iframe>-->
+      <div class="ui relaxed divided link list" >
+        <div class="item">
+          <div class="content">
+            <a class="header">本系徵聘醫資管及MIS組專任教師各1名</a>
+            <div class="extra">2016-09-30</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <a class="header">106學年度碩士推薦甄試第二階段複試排程</a>
+            <div class="extra">2016-11-08</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <a class="header">106學年度碩士推薦甄試第二階段複試排程</a>
+            <div class="extra">2016-11-08</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="tab2" class="ui aligned container tabcontent" style="display: none;">
+      <!--<iframe id="iframe1" src="news-1.html" frameborder="0" framepadding="10px" scrolling="no"></iframe>-->
+      <div class="ui relaxed divided link list" >
+        <div class="item">
+          <div class="content">
+            <a class="header">2本系徵聘醫資管及MIS組專任教師各1名</a>
+            <div class="extra">2016-09-30</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="tab3" class="ui aligned container tabcontent" style="display: none;">
+      <!--<iframe id="iframe1" src="news-1.html" frameborder="0" framepadding="10px" scrolling="no"></iframe>-->
+      <div class="ui relaxed divided link list" >
+        <div class="item">
+          <div class="content">
+            <a class="header">3本系徵聘醫資管及MIS組專任教師各1名</a>
+            <div class="extra">2016-09-30</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <a class="header">106學年度碩士推薦甄試第二階段複試排程</a>
+            <div class="extra">2016-11-08</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab4" class="ui aligned container tabcontent" style="display: none;">
+      <!--<iframe id="iframe1" src="news-1.html" frameborder="0" framepadding="10px" scrolling="no"></iframe>-->
+      <div class="ui relaxed divided link list" >
+        <div class="item">
+          <div class="content">
+            <a class="header">4本系徵聘醫資管及MIS組專任教師各1名</a>
+            <div class="extra">2016-09-30</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <a class="header">106學年度碩士推薦甄試第二階段複試排程</a>
+            <div class="extra">2016-11-08</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="ui divider"></div>
+    <div class="ui attached top grid">
+    <div class="right floated five wide column">
+
+      <a href="#"><i class="plus icon"></i>更多消息</a>
+    </div>
+
+</div>
+  </div>
+
+</body>
+
+
+</html>
